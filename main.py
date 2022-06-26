@@ -9,7 +9,7 @@ while True:
   blind.update({name:bid})
   other = input('Is the any other bidders')
   if other == 'yes':
-    
+    clear()
     continue
   else:
     x = 0
