@@ -7,19 +7,22 @@ while True:
   name = input('Enter Your name? ') 
   bid = int(input('Enter Your bid '))
   blind.update({name:bid})
-  other = input('Is the any other bidders')
+  other = input('Is the any other bidders? ')
   if other == 'yes':
     clear()
     continue
   else:
+    winner = ''
     x = 0
     for value in blind:
+      
       if blind[value] > x:
         x = blind[value]
-    print('the higts bid',x)
+        winner = value
+    print(f'the higts bid {x} and he is {winner}')
     break
-       
-        
+
+
   
     
 
